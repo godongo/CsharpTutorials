@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20208E23-BFD2-4680-8302-D7E4BD41D9CA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ManageProgramFlow</RootNamespace>
+    <AssemblyName>ManageProgramFlow</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concretes\MyArgs.cs" />
+    <Compile Include="Concretes\OrderProcessingException.cs" />
+    <Compile Include="Concretes\Pub.cs" />
+    <Compile Include="Demos\EventsAndCallBacks_Delegates.cs" />
+    <Compile Include="Demos\EventsAndCallBacks_Events.cs" />
+    <Compile Include="Demos\EventsAndCallBacks_Lambdas.cs" />
+    <Compile Include="Demos\ExceptionHandling.cs" />
+    <Compile Include="Demos\ManageMultithreading.cs" />
+    <Compile Include="Demos\ProgramFlow.cs" />
+    <Compile Include="Demos\UsingAsyncAndAwait.cs" />
+    <Compile Include="Demos\UsingConcurrentCollections.cs" />
+    <Compile Include="Demos\UsingPLINQ.cs" />
+    <Compile Include="Demos\UsingTasks.cs" />
+    <Compile Include="Demos\UsingTheParallelClass.cs" />
+    <Compile Include="Demos\UsingTheThreadClass.cs" />
+    <Compile Include="ExecuteManageProgramFlow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstracts\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
