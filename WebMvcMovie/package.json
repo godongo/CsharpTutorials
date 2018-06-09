@@ -3,10 +3,16 @@
   "name": "webmvcmovie",
   "private": true,
   "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-cssmin": "0.1.7",
+    "gulp-uglify": "2.0.1",
+    "rimraf": "2.6.1",
+    "merge-stream": "1.0.1"
   },
   "dependencies": {
-    "bootstrap": "4.1.1",
-    "jquery": "3.3.1",
+    "bootstrap": "3.3.7",
+    "jquery": "2.2.0",
     "jquery-validation": "1.17.0",
     "jquery-validation-unobtrusive": "3.2.10"
   }

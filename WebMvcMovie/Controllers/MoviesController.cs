@@ -113,7 +113,7 @@ namespace WebMvcMovie.Controllers
                 // GeeNote: Success, go back to index view after saving to db.
                 return RedirectToAction(nameof(Index));
             }
-            // GeeNote: Something, redislay the entity on edit view.
+            // GeeNote: Something, redisplay the entity on edit view.
             return View(movie);
         }
 

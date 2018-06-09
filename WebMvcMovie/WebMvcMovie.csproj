@@ -2,7 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>e7189eb2-c1c8-43f0-8e7e-5b84bb4fd53a</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib_default\**" />
+    <Content Remove="wwwroot\lib_default\**" />
+    <EmbeddedResource Remove="wwwroot\lib_default\**" />
+    <None Remove="wwwroot\lib_default\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
