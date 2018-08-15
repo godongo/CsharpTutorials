@@ -7,6 +7,7 @@ using System;
 
 namespace WebMvcMovie
 {
+    // THIS METHOD IS FOR LOW LEVEL CONFIGURATION OF THE APPLICATION.
     public class Program
     {
         public static void Main(string[] args)
@@ -33,7 +34,13 @@ namespace WebMvcMovie
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            
+            /* 
+             * 1. By default will load configuration based on appsettings.json
+             * 2. Also adds environment variables(Runs in OS or exist outside project) 
+             *    to the settings list. 
+             */
+            WebHost.CreateDefaultBuilder(args) 
                 .UseStartup<Startup>()
                 .Build();
     }

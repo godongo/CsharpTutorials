@@ -51,6 +51,12 @@ namespace RazorPagesMovie.Pages.Movies
             Movie = await movies.ToListAsync();
         }
 
+        /*
+         * GeeNote:
+         * When OnGet returns void or OnGetAsync returns Task, NO RETURN METHOD IS USED. 
+         * When the return type is IActionResult or Task<IActionResult>, A RETURN STATEMENT 
+         * MUST BE PROVIDED. For example, the Pages/Movies/Create.cshtml.cs OnPostAsync method:
+         */
 
     }
 }

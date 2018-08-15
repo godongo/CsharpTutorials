@@ -20,6 +20,7 @@ namespace RazorPagesMovie.Pages.Movies
         }
 
         //  Opt-in to model binding
+        // GeeNote: Will handle posted data
         [BindProperty]
         public Movie Movie { get; set; }
 

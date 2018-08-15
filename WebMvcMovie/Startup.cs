@@ -23,10 +23,24 @@ namespace WebMvcMovie
         // Gee: This method is NOT INJECTABLE BY DESIGN
         public void ConfigureServices(IServiceCollection services)
         {
+            /*
+             * 1. TRANSIENT OBJECTS are always different; a new instance is provided to every 
+             *    controller and every service.
+             * 2. SCOPED OBJECTS are the same within a request, 
+             *    but different across different requests
+             * 3. SINGLETON OBJECTS are the same for every object and every request (regardless of 
+             *    whether an instance is provided in ConfigureServices)
+             *
+             */
             services.AddMvc();
 
             services.AddDbContext<WebMvcMovieContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("WebMvcMovieContext")));
+
+            //services.AddDbContext<WebMvcMovieContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("WebMvcMovieContext")), ServiceLifetime.Transient);
+
+
 
             /**
 			 * Our configuration
@@ -51,6 +65,7 @@ namespace WebMvcMovie
 
 
             //app.UseCustomExceptionHandler();
+            //app.UseMiddleware<GeeMiddleware>(); // Using a middleware as a standalone class.
 
             #region Diagnostics middleware
             //app.UseWelcomePage();

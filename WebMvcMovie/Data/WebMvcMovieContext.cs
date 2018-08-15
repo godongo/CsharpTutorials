@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using WebMvcMovie.Models;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace WebMvcMovie.Models
 {
@@ -14,8 +9,8 @@ namespace WebMvcMovie.Models
         {
         }
 
-        public DbSet<WebMvcMovie.Models.Movie> Movie { get; set; }
+        public DbSet<Movie> Movie { get; set; }
 
-        public DbSet<WebMvcMovie.Models.CheckboxModel> CheckboxModel { get; set; }
+        public DbSet<CheckboxModel> CheckboxModel { get; set; }
     }
 }

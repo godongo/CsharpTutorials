@@ -31,11 +31,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcMovie", "WebMvcMovie\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debugging\Debugging.csproj", "{3FED3441-FE65-408B-A6C6-33D651BDB423}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcMovieWithAuthentication", "WebMvcMovieWithAuthentication\WebMvcMovieWithAuthentication.csproj", "{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcMovieWithAuthentication", "WebMvcMovieWithAuthentication\WebMvcMovieWithAuthentication.csproj", "{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\TodoApi\WebApi.csproj", "{7EBD0311-3EA4-4B62-B892-087F468AFFC7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPagesMovie", "RazorPagesMovie\RazorPagesMovie\WebRazorPagesMovie.csproj", "{738EFAFB-D41E-469B-BF90-4196F54D8A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppIdentity1", "WebAppIdentity1\WebAppIdentity1.csproj", "{8048CA60-B112-43C2-8C74-9A94AF9548EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

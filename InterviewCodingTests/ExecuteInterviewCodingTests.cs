@@ -9,7 +9,7 @@ namespace InterviewCodingTests
     {
         static void Main(string[] args)
         {
-            //UsingLogic.Swap();
+            UsingLogic.Swap();
             //UsingLogic.BubbleSort();
             //UsingLogic.FizzBuzz();
 
