@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApi.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+using NSwag.AspNetCore;
 
 namespace WebApi
 {
@@ -29,6 +31,8 @@ namespace WebApi
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseStaticFiles(); // for the wwwroot folder
+
+            app.UseSwaggerUi(typeof(Startup).GetTypeInfo().Assembly, new SwaggerUiOwinSettings());
 
             if (env.IsDevelopment())
             {

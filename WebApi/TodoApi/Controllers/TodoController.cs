@@ -11,7 +11,7 @@ namespace WebApi.Controllers
     [Route("api/todo")]
     public class TodoController : Controller
     {
-        // This context use in-memory db, defined in configureServices in Startup.cs
+        // This context uses in-memory db, defined in configureServices in Startup.cs
         private readonly TodoContext _context;
 
         public TodoController(TodoContext context)

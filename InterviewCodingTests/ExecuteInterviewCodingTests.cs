@@ -9,7 +9,18 @@ namespace InterviewCodingTests
     {
         static void Main(string[] args)
         {
-            UsingLogic.Swap();
+            for (int i = 1; i < 8; i++)
+            {
+                var check = i;
+                                
+                for (int x = 0; x < check; x++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine("");                
+            }
+
+            //UsingLogic.Swap();
             //UsingLogic.BubbleSort();
             //UsingLogic.FizzBuzz();
 
@@ -19,7 +30,7 @@ namespace InterviewCodingTests
             
             //RandomCode.AnArrayOfLists();
 
-            ProcessNumber.Execute();
+            //ProcessNumber.Execute();
 
             Console.ReadKey();
         }
