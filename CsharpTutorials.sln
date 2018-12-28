@@ -25,21 +25,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ManageProgramFlow", "Mana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{6CC8FBBE-4685-4B7A-B27E-C9DADBC93041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "TodoApiClient\WebApiClient.csproj", "{48BF26A8-AF71-49F4-905B-7230056694B3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcMovie", "WebMvcMovie\WebMvcMovie.csproj", "{CAD1312F-6C80-4249-9D38-8CC8A80614C4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Debugging", "Debugging\Debugging.csproj", "{3FED3441-FE65-408B-A6C6-33D651BDB423}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebMvcMovieWithAuthentication", "WebMvcMovieWithAuthentication\WebMvcMovieWithAuthentication.csproj", "{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\TodoApi\WebApi.csproj", "{7EBD0311-3EA4-4B62-B892-087F468AFFC7}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPagesMovie", "RazorPagesMovie\RazorPagesMovie\WebRazorPagesMovie.csproj", "{738EFAFB-D41E-469B-BF90-4196F54D8A60}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppIdentity1", "WebAppIdentity1\WebAppIdentity1.csproj", "{8048CA60-B112-43C2-8C74-9A94AF9548EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpKeywords", "CSharpKeywords\CSharpKeywords.csproj", "{5B09832B-3180-4E7F-9988-85EAF5902A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpKeywords", "CSharpKeywords\CSharpKeywords.csproj", "{5B09832B-3180-4E7F-9988-85EAF5902A4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{5BFC72FC-E9D3-4A1B-9985-30271C7AF2DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{48BF26A8-AF71-49F4-905B-7230056694B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPagesMovie", "RazorPagesMovie\WebRazorPagesMovie.csproj", "{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,10 +91,6 @@ Global
 		{6CC8FBBE-4685-4B7A-B27E-C9DADBC93041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CC8FBBE-4685-4B7A-B27E-C9DADBC93041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CC8FBBE-4685-4B7A-B27E-C9DADBC93041}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48BF26A8-AF71-49F4-905B-7230056694B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48BF26A8-AF71-49F4-905B-7230056694B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48BF26A8-AF71-49F4-905B-7230056694B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48BF26A8-AF71-49F4-905B-7230056694B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CAD1312F-6C80-4249-9D38-8CC8A80614C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CAD1312F-6C80-4249-9D38-8CC8A80614C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD1312F-6C80-4249-9D38-8CC8A80614C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -107,14 +103,6 @@ Global
 		{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39FAFFF8-4C50-4FAC-8DEB-8177C1255D73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7EBD0311-3EA4-4B62-B892-087F468AFFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EBD0311-3EA4-4B62-B892-087F468AFFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EBD0311-3EA4-4B62-B892-087F468AFFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EBD0311-3EA4-4B62-B892-087F468AFFC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{738EFAFB-D41E-469B-BF90-4196F54D8A60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8048CA60-B112-43C2-8C74-9A94AF9548EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -123,6 +111,18 @@ Global
 		{5B09832B-3180-4E7F-9988-85EAF5902A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B09832B-3180-4E7F-9988-85EAF5902A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B09832B-3180-4E7F-9988-85EAF5902A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BFC72FC-E9D3-4A1B-9985-30271C7AF2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BFC72FC-E9D3-4A1B-9985-30271C7AF2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BFC72FC-E9D3-4A1B-9985-30271C7AF2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BFC72FC-E9D3-4A1B-9985-30271C7AF2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BF26A8-AF71-49F4-905B-7230056694B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BF26A8-AF71-49F4-905B-7230056694B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BF26A8-AF71-49F4-905B-7230056694B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BF26A8-AF71-49F4-905B-7230056694B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
