@@ -1,20 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Linq;
-using System.Net.Mail;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using WebMvcMovie.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace WebMvcMovie.Controllers
 {
-    
     public class HomeController : Controller
     {
+        public IConfiguration Configuration { get; set; }
+
+        public HomeController(IConfiguration config)
+        {
+            Configuration = config;
+        }
+
         public IActionResult Index()
         {
             //throw new Exception("That is some exception, Ooops!"); 
+
+            // Accessing settingS from MY USER SECRETS.
+            ViewData["myAppSetting"] = Configuration["myAppSetting"];
+            ViewData["myConnectionString"] = Configuration.GetConnectionString("myConnectionString");
 
             return View();
         }
