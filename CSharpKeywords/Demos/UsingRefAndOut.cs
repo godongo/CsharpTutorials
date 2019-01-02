@@ -18,7 +18,7 @@ namespace CSharpKeywords.Demos
 
             //int outNum = 20;
             //OutFunction(out outNum); // This value will be discarded.
-            OutFunction(out int outNum);            
+            OutFunction(out int outNum); // Better option.            
             Console.WriteLine($"Out: {outNum}");
         }
 

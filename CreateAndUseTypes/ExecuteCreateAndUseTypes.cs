@@ -19,10 +19,11 @@ namespace CreateAndUseTypes
             //Inheritance.InstantiateInterfaceConcreteType();
             //Inheritance.CreatingBaseClasses();
             //Inheritance.ChangingBehaviourUsingBaseAndDerivedTypes();
+            Polymorphism.Execute();
 
             //DotNetInterfaces.IComparableInterface();
             //DotNetInterfaces.SyntacticSugarOfTheForeach();
-            DotNetInterfaces.IEnumerableInterface();
+            //DotNetInterfaces.IEnumerableInterface();
 
             //UsingReflection.Execute();
             //UsingReflection.GetPlugin();

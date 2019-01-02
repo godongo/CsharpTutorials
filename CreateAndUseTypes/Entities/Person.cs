@@ -45,5 +45,10 @@ namespace CreateAndUseTypes.Entities
         {
             return $"{LastName} and {Age}";
         }
+
+        public static implicit operator Person(Employee v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
