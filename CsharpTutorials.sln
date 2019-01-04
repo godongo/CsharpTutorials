@@ -41,8 +41,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPagesMovie", "RazorPagesMovie\WebRazorPagesMovie.csproj", "{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppAspNetCoreNg6", "WebAppAspNetCoreNg6\WebAppAspNetCoreNg6.csproj", "{9B81AB2B-A64C-44AF-90CB-FE9E70FA6400}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,10 +123,6 @@ Global
 		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C04B77B6-4AE5-4D2A-99D6-9D6337DB880D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B81AB2B-A64C-44AF-90CB-FE9E70FA6400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B81AB2B-A64C-44AF-90CB-FE9E70FA6400}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B81AB2B-A64C-44AF-90CB-FE9E70FA6400}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B81AB2B-A64C-44AF-90CB-FE9E70FA6400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
