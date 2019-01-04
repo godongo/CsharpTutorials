@@ -11,11 +11,10 @@ namespace CSharpKeywords
             //UsingYield.Execute();
             //UsingIndexer.Execute(); 
             //UsingOperatorOverloading.Execute();
-            UsingRefAndOut.Execute();
-
+            //UsingRefAndOut.Execute();
+                        
             Console.ReadKey();
-        }
-        
+        }       
         
     }
 

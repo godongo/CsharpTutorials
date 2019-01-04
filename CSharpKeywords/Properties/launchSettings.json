@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CSharpKeywords": {
+      "commandName": "Project",
+      "commandLineArgs": "Hello Gee"
+    }
+  }
+}

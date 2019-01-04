@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Debugging
 {
@@ -7,27 +8,55 @@ namespace Debugging
         static string someVar = string.Empty;
 
         static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+        {           
+            ReadDebugNotes();
+            DebuggerDotBreak();
 
-            Method1();
-
+   
             Console.ReadKey();
         }
 
-        private static void Method1()
+        private static void ReadDebugNotes()
         {
-            someVar = "Executing in method 1";
-            Console.WriteLine(someVar);
+            /*
+             * Demo#1
+             * Project properties launch options.
+             * Start with stepping (into/over)
+             * Return values
+             * Set next statement
+             * Step into specific method (Specific method while skipping others)
+             * Run to cursor 
+             * Edit and continue
+             * Step out
+             * Run to cursor from Call Stack
+             * Debug a method from immediate window
+             */
 
-            Method2();
+            /*
+             * Demo#2
+             * Debugger.IsAttached
+             * Debugger.Break() (Good for execution path not called frequently)
+             * Visualizers 
+             * Peek definition (Alt+F12)
+             * DebuggerDisplay attribute 
+             * DataTips (Pin data tip - in loops)
+             * - Transparency
+             * - Pinning
+             * Make ObjectID
+             */
+
+
         }
 
-        private static void Method2()
+        // Use for execution path not frequently called.
+        private static void DebuggerDotBreak()
         {
-            someVar = "Executing in method 2";
-
-            Console.WriteLine(someVar);
-        }
+            if(Debugger.IsAttached)
+            {
+                Debugger.Break();
+            }
+        }         
     }
 }
+
+
