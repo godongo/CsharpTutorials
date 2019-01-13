@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concretes\LocalFunctions.cs" />
     <Compile Include="Demos\CSharp6.cs" />
     <Compile Include="Demos\CSharp7.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\Subject.cs" />
     <Compile Include="ExecuteCSharpVersions.cs" />
     <Compile Include="Helpers\SomeStaticClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstracts\" />
-    <Folder Include="Concretes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

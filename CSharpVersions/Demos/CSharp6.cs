@@ -10,6 +10,19 @@ namespace CSharpVersions.Demos
 {
     class CSharp6
     {
+        internal static void Execute()
+        {
+            //Using_Static();   
+            //Using_Custom_Static_Class();
+            //Auto_Property_Initializers();
+            //Dictionary_Initializers();
+            //String_Interpolation();
+            //Name_Of_Expression();
+            //Expression_Bodied_Function_And_Property();
+            //Exception_Filters();
+            //Await_In_Catch_And_Finally_Block();
+            //Null_Conditional_Operator();
+        }
         internal static void Using_Static()          
         {
             // GeeNote: Note using statment above: using static System.Console;
